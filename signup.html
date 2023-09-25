@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width" />
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4d0b4c932e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        * {box-sizing: border-box}
+input[type=text], input[type=password] {
+   width: 100%;
+   font-size: 28px;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
+}
+        body {
+            background-image: url(https://wallpaperaccess.com/full/952192.jpg);
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: purple;
+            color: white;
+        }
+
+        .topnav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .topnav a,
+            .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+        label{
+   font-size: 15px;
+}
+input[type=text]:focus, input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+}
+hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+}
+button {
+   font-size: 18px;
+   font-weight: bold;
+   background-color: rgb(10, 119, 13);
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   opacity: 0.9;
+}
+button:hover {
+   opacity:1;
+}
+.cancel {
+   padding: 14px 20px;
+   background-color: #ff3d2f;
+}
+.formContainer {
+   padding: 16px;
+}
+.formContainer p{
+   font-size: 20px;
+}
+
+        .c {
+            margin-top: 12%;
+            text-align: center;
+            margin: auto;
+            
+        }
+        .other{
+            float: right;
+        }
+
+        .main{
+  height: 50vh;
+}
+.hover-effect1 {
+  min-height: 20px;
+  background: #F44336;
+  text-align: center;
+}
+.hover-effect1 ul {
+ padding-top: 1px;
+}
+.hover-effect1 ul li {
+ display: inline-block;
+}
+.hover-effect1 ul li a {
+ font-size: 30px;
+ text-align: center;
+ color: #fff;
+ margin: 0px 10px;
+ line-height: 50px;
+ display: inline-block;
+ width: 50px;
+ height: 50px;
+ background:#dc3545;
+ -webkit-transition: all .6s ease;
+ -moz-transition: all .6s ease;
+ -ms-transition: all .6s ease;
+ -o-transition: all .6s ease;
+ transition: all .6s ease;
+}
+.hover-effect1 ul li:hover a {
+  border-radius: 50%;
+  background: #dc3545;
+ -moz-transform: rotate(360deg);
+ -webkit-transform: rotate(360deg);
+ -o-transform: rotate(360deg);
+ -ms-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+.d, .d:hover{
+    text-decoration: none;
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a  href="index.html">H-fuel</a>
+            <a href="info.html">O nás</a>
+            <a href="nakup.html">Produkty</a>
+            <a href="sponsors.html">Sponzorujeme</a>
+            <div class="other">
+           <a href="cart.html"><i style="font-size:24px" class="fa">&#xf290;</i></a>
+           <a class="active" href="signup.html"><i style="font-size:24px" class='fa fa-user'></i></a>
+        </div>
+        </div>
+    </header>
+    <div class="formContainer">
+        <h1>Přihlášení</h1>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Zadat email" name="email" required>
+        <label for="password"><b>Heslo</b></label>
+        <input type="password" placeholder="Zadat heslo" name="password" required>
+        <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px"> Trvalé přihlášení
+        </label>
+        <p>Vytvářením účtu souhlasíte že můžeme <a href="https://www.youtube.com/watch?v=XO0q_ISA8Jk&ab_channel=Jabz"
+        style="color:dodgerblue">prodávat vaše osobní data čínské vládě</a><p>
+        <div>
+        <button type="button" class="cancel"> <a class="d" href="index.html"> Cancel</a></button>
+        <button type="submit" class="signup"> <a class="d" href="index.html"> Sign Up</a></button>
+        </div>
+        </div>
+        </form>
+        
+
+    <div class="main"></div>
+    <footer id="Footer"style="background-color:#b3b3cc;" class="page-footer font-small stylish-color-dark pt-4">
+      <div style="background-color:#b3b3cc;" class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            
+            <h5 class="text-uppercase font-weight-bold mt-3 mb-4">Další info</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+            <p>Prosím nežalujte nás UwU</p>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Linky</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+            <p>
+              <a href="https://www.youtube.com/watch?v=pDEinB62i68&ab_channel=Knox">Váš účet</a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/watch?v=lgiHnikicO0&ab_channel=Ghettoprod.">Staňte se sponzorem</a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/watch?v=1JABdS-HN5A&ab_channel=HiveFunnies">Servis</a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/watch?v=5vHTPF82-D0&ab_channel=AboutFiveGoons">Pomoc</a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-home mr-3"></i> Mumbai, Maharashtra</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> h-fuel@h-fuelcompany.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 420 732 463 202 </p>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 420 733 524 564</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      
+      <ul style="background-color:#b3b3cc;" class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1">Registrace</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="signup.html" class="btn btn-outline-danger btn-rounded">Přihlásit se</a>
+        </li>
+      </ul>
+      <hr>
+      
+      <div class="hover-effect1">
+      <ul  style="background-color:#b3b3cc;" class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/tomio.cz/" title="Facebook"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/VancityReynolds" title="Twitter"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/ryangoslinguk/?hl=cs" title="Instagram"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.youtube.com/@NikocadoAvocado" title="Youtube"><i class="fa fa-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+      
+      <div  style="background-color:#b3b3cc;" class="footer-copyright text-center py-3">
+        Copyright© 2023 H-FUEL
+      </div>
+    </footer>
+</body>
+
+</html>
